@@ -1,5 +1,6 @@
 :root {
-  --primary-font: "Roboto", sans-serif;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   --primary-text-color: #2e2f42;
   --secondary-text-color: #434455;
   --text-color-hover: #4d5ae5;
@@ -8,12 +9,48 @@
   --background-btn-filters: #f4f4fd;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1188px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
+
 body {
   font-family: var(--primary-font);
   color: #434455;
@@ -51,8 +88,41 @@ body {
 
 /*=================Header============================*/
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo-link-header {
-  font-family: "Raleway", sans-serif;
+  margin-right: 76px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contacts-header-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+. {
+  margin-left: 40px;
+}
+
+.logo-link-header {
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -84,6 +154,7 @@ body {
 .contacts-header {
   font-style: normal;
 }
+
 .contacts-header-link {
   text-decoration: none;
   font-weight: 400;
@@ -106,7 +177,7 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -127,7 +198,6 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  cursor: pointer;
   background: #4d5ae5;
   color: #ffffff;
 }
@@ -162,7 +232,6 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  cursor: pointer;
   letter-spacing: 0.04em;
   color: var(--text-color-hover);
   background-color: var(--background-btn-filters);
@@ -179,7 +248,7 @@ body {
 /*=================Footer============================*/
 
 .logo-link-footer {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
