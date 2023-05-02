@@ -51,8 +51,6 @@ body {
 /*=================Components========================*/
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
   width: 1158px;
   margin: 0 auto;
 }
@@ -113,7 +111,7 @@ body {
 }
 
 .page-header-container {
-  padding: 24px 0;
+  padding: 24px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
