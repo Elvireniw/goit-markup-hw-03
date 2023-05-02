@@ -114,7 +114,6 @@ body {
 .contacts-header-list {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
 . {
@@ -162,6 +161,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.phone {
+  margin-left: auto;
 }
 
 .contacts-header-link:hover,
