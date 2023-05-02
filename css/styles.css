@@ -51,6 +51,7 @@ body {
 /*=================Components========================*/
 
 .container {
+  padding: 0 15px;
   width: 1158px;
   margin: 0 auto;
 }
@@ -107,11 +108,11 @@ body {
 /*=================Header============================*/
 
 .header {
+  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .page-header-container {
-  padding: 24px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
