@@ -112,6 +112,7 @@ body {
 }
 
 .page-header-container {
+  padding: 24px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -131,7 +132,11 @@ body {
   margin-right: 40px;
 }
 
-.menu-item {
+.menu-link {
+  padding: 24px 0;
+}
+
+.menu-link {
   padding-top: 24px;
   padding-bottom: 24px;
 }
