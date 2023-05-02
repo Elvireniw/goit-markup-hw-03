@@ -177,6 +177,11 @@ body {
 .contacts-header {
   font-style: normal;
 }
+
+.contacts-header:not(:last-child) {
+  margin-right: 24px;
+}
+
 .contacts-header-link {
   text-decoration: none;
   font-weight: 400;
@@ -248,12 +253,9 @@ body {
 }
 
 .features-list {
+  gap: 24px;
   display: flex;
-  align-items: center;
-}
-
-.contacts-header:not(:last-child) {
-  margin-right: 24px;
+  align-items: top;
 }
 
 /*=================Features========================*/
