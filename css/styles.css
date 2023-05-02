@@ -5,6 +5,7 @@
   --secondary-text-color: #434455;
   --text-color-hover: #4d5ae5;
   --accent-color: #404bbf;
+  --primary-btn-color: #e7e9fc;
   --background-color: #ffffff;
   --background-btn-filters: #f4f4fd;
 }
@@ -53,8 +54,7 @@ body {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 
 .section {
@@ -249,7 +249,7 @@ body {
 /*=================Features========================*/
 
 .features {
-  margin-top: 120px;
+  padding: 120px 0;
 }
 
 .features-list {
@@ -258,17 +258,26 @@ body {
   align-items: top;
 }
 
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
+
 /*=================Features========================*/
 
 /*=================Services========================*/
 
 .services-list {
+  gap: 24px;
   display: flex;
   align-items: center;
 }
 
-.services-item:not(:last-child) {
-  margin-right: 24px;
+.services-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.services {
+  padding-bottom: 120px;
 }
 
 /*=================Services========================*/
@@ -305,15 +314,14 @@ body {
 
 .filters-list {
   gap: 24px;
-  padding-top: 96px;
-  padding-bottom: 72px;
   display: flex;
+  margin-bottom: 72px;
   align-items: center;
   justify-content: center;
 }
 
 .modal-btn {
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--primary-btn-color);
   border-radius: 4px;
   padding: 12px 24px;
   border: none;
@@ -332,6 +340,7 @@ body {
 
 .modal-btn:hover,
 .modal-btn:focus {
+  border: 1px solid transparent;
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -343,12 +352,16 @@ body {
 
 /*=================Portfolio list===================*/
 
+.portfolio {
+  padding: 96px 0 120px;
+}
+
 .portfolio-list {
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 120px;
 }
 
 .portfolio-item {
@@ -356,12 +369,10 @@ body {
 }
 
 .portfolio-card-wrapper {
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
 }
 
 /*=================Portfolio list===================*/
@@ -375,8 +386,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
